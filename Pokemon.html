@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemones</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="stylesheet/Pokemon.css">
+</head>
+<body>
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Pokemon</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Pokemon.html">Equipos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Lista.html">Lista</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://web.whatsapp.com">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+
+    <div class="container">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="2000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1000.png" class="d-block w-100" alt="Pokemon 1000" style="max-width: 400px; max-height: 500px; margin: auto;">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1001.png" class="d-block w-100" alt="Pokemon 1100" style="max-width: 400px; max-height: 500px; margin: auto;">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/547.png" class="d-block w-100" alt="Pokemon 547" style="max-width: 400px; max-height: 500px; margin: auto;">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/652.png" class="d-block w-100" alt="Pokemon 652" style="max-width: 400px; max-height: 500px; margin: auto;">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png" class="d-block w-100" alt="Pokemon 5" style="max-width: 400px; max-height: 500px; margin: auto;">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/52.png" class="d-block w-100" alt="Pokemon 52" style="max-width: 400px; max-height: 500px; margin: auto;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container">
+        <h1>Crea Equipos Pokemons</h1>
+
+        <input type="text" id="pokemonInput" class="form-control mb-2" placeholder="Nombre del Pokémon">
+        <button onclick="agregarPokemon()" class="btn btn-outline-primary mb-2">Agregar</button>
+        <button onclick="resetearEquipo()" class="btn btn-outline-danger mb-2">Resetear Equipo</button>
+        <button onclick="mostrarHistorial()" class="btn btn-outline-secondary mb-2">Historial</button>
+        <button onclick="compararEquipos()" class="btn btn-outline-success mb-2">¡Enfrentar Equipos!</button>
+
+        <hr>
+        <div id="equipos">
+            
+        </div>
+    </div>
+
+    <br>
+    
+
+    <div class="container d-flex justify-content-center align-items-center">
+        <div class="card text-center" style="width: 500px;">
+            <div class="card-body">
+                <h5 class="card-title">Creacion de Equipos</h5>
+                <p class="card-text">Para crear un equipo Pon el nombre del pokemon o el ID del pokemon que quieras. los equipos
+                    constan de 3 pokemons cada uno, crea los equipos que quieras y has que se enfrenten. la manera en la que 
+                    funciona el enfrentamiento entre equipos, es sumando todas las estadisticas de los pokemons del equipo,
+                    el equipo que posea la mayor cantidad de estadisticas gana el combate, Puedes ir a la pagina de Lista para tener algunas
+                    recomendaciones de pokemons a usar para tu Equipo.
+                </p>
+                <a href="Lista.html" class="btn btn-outline-primary">Lista Pokemon</a>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    
+    <footer class="bg-dark text-light py-4">
+        <div class="container text-center">
+            <p>© 2024 Pokemon. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script src="Pokemon.js"></script>
+</body>
+</html>

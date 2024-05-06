@@ -1,0 +1,24 @@
+body {
+    background-color: #c9cad3;
+}
+
+.jumbotron {
+    background-image: url('descargar.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px; 
+}
+
+.card {
+    background-color: #1f1c1c;
+    color: rgb(158, 177, 50);
+}
+
+.card img {
+    height: 350px;
+    object-fit: cover;
+}
+
+.carousel {
+    background-color: #1f1c1c; 
+}
